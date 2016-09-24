@@ -1,1 +1,69 @@
-Hello World!
+<!DOCTYPE HTML>
+
+<html>
+
+
+	<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    gonder();
+
+});
+
+function gonder(){
+    $.ajax({
+        type:'POST',
+        url:'2.php',
+        success: function (msg) {
+            $("#sonuc").html(msg);
+        }
+    });
+}
+</script>
+		<title>Muzaffer Yıldırım</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>
+						<div id="sonuc">
+						</div></h1>
+						<p>Muzaffer Yıldırım &nbsp;&bull;&nbsp; Software Developer</p>
+						<nav>
+							<ul>
+								<li><a href="http://www.twitter.com/yldrmzffr" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="http://www.github.com/yldrmzffr" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href= "mail to:yldrmzffr@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: MUZAFFER.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
