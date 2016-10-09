@@ -8,4 +8,4 @@ Yakında
 
 ### İletişim
 
-[email@domain.com](mailto:yldrmzffr@gmail.com)
+[yldrmzffr@gmail.com](mailto:yldrmzffr@gmail.com)
