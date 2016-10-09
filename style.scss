@@ -48,6 +48,9 @@ h1 {
   font-size: 30px;
   a {
     color: inherit;
+	 transition:all 0.2s ease-in-out;
+        -moz-transition:all 0.2s ease-in-out;
+        -webkit-transition:all 0.2s ease-in-out;
   }
 }
 
@@ -72,8 +75,14 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
+	transition:all 0.2s ease-in-out;
+        -moz-transition:all 0.2s ease-in-out;
+        -webkit-transition:all 0.2s ease-in-out;
   &:hover, &:active {
     color: $blue;
+	 transition:all 0.2s ease-in-out;
+        -moz-transition:all 0.2s ease-in-out;
+        -webkit-transition:all 0.2s ease-in-out;
   }
 }
 
