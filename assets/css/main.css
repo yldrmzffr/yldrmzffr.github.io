@@ -1934,31 +1934,21 @@
 
 /* Item */
 
-	.item.thumb {
-		display: block;
-		position: relative;
-		background: #1a1f2c;
-		background: rgba(255, 255, 255, 0.25);
-		cursor: default;
+	.item {
+		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		margin-bottom: 40px;
 	}
 
-		.item.thumb h2 {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background: #1a1f2c;
-			background: rgba(18, 21, 29, 0.85);
-			width: 100%;
-			padding: 1em;
-			font-weight: 400;
-			line-height: 1em;
-			z-index: 2;
+		.item header {
+			background: #fff;
+			margin: 0;
+			padding: 1em 0 1em 0;
+			font-size: 0.8em;
 		}
 
-		.item.thumb img {
-			display: block;
-			z-index: 1;
-		}
+			.item header h3 {
+				font-size: 1em;
+			}
 
 /* Icons */
 
