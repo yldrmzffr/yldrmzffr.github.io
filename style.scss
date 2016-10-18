@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -72,8 +75,14 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
+		transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
   &:hover, &:active {
     color: $blue;
+	  	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
   }
 }
 
