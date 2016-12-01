@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog Hakkında
-permalink: /bloghakkında/
+permalink: /bloghakkinda/
 ---
 
 ### Öncelikle Merhaba.
