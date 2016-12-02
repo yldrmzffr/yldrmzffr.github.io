@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1.1 - C# Nedir ? - IDE Tavsiyesi
+title:C# Nedir ? - IDE Tavsiyesi
 ---
 
 Merhaba,
@@ -29,4 +29,3 @@ Kod yazmak için birçok IDE var. Yazdığınız dile görede IDE değiştirmek 
 Çok kısa bir giriş düşünüyordum ama şuydu buydu derken biraz uzadı, sizide sıkmak istemiyorum neyse Bir sonraki konuda. Algoritma üzerine duracağım.
 
 İyi dileklerimle.
-
