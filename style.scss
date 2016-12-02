@@ -241,6 +241,8 @@ img{
 //Katalog menusu
 katalog img{
 	max-width: 100px;
+	border-radius: 100%;
+
    -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transform: scale(1);
@@ -251,6 +253,8 @@ katalog img{
 }
 
 katalog img:hover{
+	border-radius: 100%;
+
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   -webkit-transform: scale(1.2);
