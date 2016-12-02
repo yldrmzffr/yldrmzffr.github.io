@@ -8,10 +8,10 @@ permalink: /menu/
 
 
 <katalog>
-<img src=images/csharp.png>
-<img src=images/wordpress.png>
-<img src=images/css.png>
-<img src=images/arduino.png>
-<img src=images/java.jpg>
+![_csharp.png]({{ site.baseurl }}/images/csharp.png)
+![_wordpress.png]({{ site.baseurl }}/images/wordpress.png)
+![_css.png]({{ site.baseurl }}/images/css.png)
+![_arduino.png]({{ site.baseurl }}/images/arduino.png)
+![_java.jpg]({{ site.baseurl }}/images/java.jpg)
 </katalog>
 
