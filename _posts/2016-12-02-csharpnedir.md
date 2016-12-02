@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# Nedir ? - IDE Tavsiyesi
+title: 1.1.1 - C# Nedir ? - IDE Tavsiyesi
 ---
 
 Merhaba
