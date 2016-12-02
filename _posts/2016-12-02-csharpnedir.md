@@ -4,18 +4,13 @@ title: C# Nedir ? - IDE Tavsiyesi
 ---
 
 Merhaba
-
 C# notlarımın 1. bölümünde C# hakkında kısaca bilgi verip, kullandığım IDE den bahsedeceğim.
-
 Microsoft tarafından geliştirilen, Nesne tabanlı programlama dilidir. Java dilini örnek almıştır ve javaya kullanım ve biçim olarak benzerdir. Dili tasarlayan mimar ise <b>Amders Hejlsberg</b> abimizdir.
 
-![_AmdersHejlsberg.jpg]({{ site.baseurl }}/images/AmdersHejlsberg.jpg)
 C#, .NET orta seviyeli programlama dillerindendir. Yani hem makine diline hem de insan algısına eşit seviyededir. Buradaki orta ifadesi dilin gücünü değil makine dili ile günlük konuşma diline olan mesafesini göstermektedir.
 
 “Si şarp” şeklinde okunur. Bu isim nereden geliyor diye düşünüyorsanız artık düşünmeyin, şimdi anlatıyorum...
 
-
-![_csharp.png]({{ site.baseurl }}/images/csharp.png)
 “C” diliyle Nesneye Yönelimli Programlama yapabilmek için eklentiler almıştır.
  Benzer şekilde “C++” diline yeni eklentiler yapılarak bir adım daha ileriye götürülmüş ve tamamen nesneye yönelik tasarlanmış. Tabi yenilikler yapıldığı için adı da ((C++)++) olarak belirlenmiş. ((C++)++)  gerçekten uzun bir isim kısaltmak için ise bu 4 tane + yı birleştirmişler ve ortaya # çıkmış. 
 Sonrası zaten zor değil, C ile # birleştirip C# yapmışlar.
@@ -36,3 +31,4 @@ Kod yazmak için birçok IDE var. Yazdığınız dile görede IDE değiştirmek 
 Okuduğunuz için teşekkür ederim...
 
 İyi dileklerimle.
+
