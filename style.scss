@@ -115,16 +115,16 @@ strong, b {
   font-weight: bold;
 }
 
-katalog img{
+baslik img{
 	max-width: 100%;
-   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+   -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
 	transition:all 0.5s ease-in-out;
 	-moz-transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 }
 
-katalog img:hover{
+baslik img:hover{
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 	transition:all 0.2s ease-in-out;
