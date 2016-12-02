@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1.1.1 - C# Nedir ? - IDE Tavsiyesi
+title: 1.1 - C# Nedir ? - IDE Tavsiyesi
 ---
 
-Merhaba
+Merhaba,
 C# notlarımın 1. bölümünde C# hakkında kısaca bilgi verip, kullandığım IDE den bahsedeceğim.
 Microsoft tarafından geliştirilen, Nesne tabanlı programlama dilidir. Java dilini örnek almıştır ve javaya kullanım ve biçim olarak benzerdir. Dili tasarlayan mimar ise <b>Amders Hejlsberg</b> abimizdir.
 
@@ -26,9 +26,7 @@ IDE'ler aynı zamanda içinde gömülü fonksiyonlar barındırır ve bu fonksiy
 
 Kod yazmak için birçok IDE var. Yazdığınız dile görede IDE değiştirmek gerekir. C# dili içinde fazlaca IDE ler var, benim kullandığım <b>SharpDevelop</b> isminde bir IDE, neden bunu kullanıyorum derseniz açık kaynak kodlu olduğu için falan değil tamamen alışkanlık. SharpDevelop ile başladım öyle devam ediyorum. Bir ara <b>Visual Studio</b> Kullandım ama alışamadım. <b>Visual Studio</b> ücretli olduğundan bende satın almadığımdan sürekli zırt pırt lisans alın gibi uyarılar uğraşmaktan yoruldum ve tekrar ücretsiz olan <b>SharpDevelop</b> a geçtim.
 
-Çok kısa bir giriş düşünüyordum ama şuydu buydu derken biraz uzadı, sizide sıkmak istemiyorum neyse Bir sonraki derste. Algoritma üzerine duracağım.
-
-Okuduğunuz için teşekkür ederim...
+Çok kısa bir giriş düşünüyordum ama şuydu buydu derken biraz uzadı, sizide sıkmak istemiyorum neyse Bir sonraki konuda. Algoritma üzerine duracağım.
 
 İyi dileklerimle.
 
