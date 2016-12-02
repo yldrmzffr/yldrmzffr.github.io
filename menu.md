@@ -4,7 +4,7 @@ title: Notlarım
 permalink: /menu/
 ---
 
-<link href="style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
 
 <katalog>
