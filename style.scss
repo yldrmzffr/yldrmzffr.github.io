@@ -278,6 +278,18 @@ katalog img:hover{
 	-webkit-transition:all 0.2s ease-in-out;
 }
 
+katalog i{
+transform: scale(1);
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+}
+katalog i:hover{
+transform: scale(1.2);
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+}
 
 nav {
   float: right;
