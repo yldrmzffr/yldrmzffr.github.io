@@ -90,14 +90,12 @@ blogyaz a {
   color: $gray;
   text-decoration: none;
 	cursor: pointer;
-		transition:all 0.9s ease-in-out;
-	-moz-transition:all 0.9s ease-in-out;
-	-webkit-transition:all 0.9s ease-in-out;
+		transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
   &:hover, &:active {
     color: $black;
-	  	transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
+	  	
   }
 }
 
