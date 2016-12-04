@@ -17,7 +17,7 @@ C#, .NET orta seviyeli programlama dillerindendir. Yani hem makine diline hem de
  Benzer şekilde “C++” diline yeni eklentiler yapılarak bir adım daha ileriye götürülmüş ve tamamen nesneye yönelik tasarlanmış. Tabi yenilikler yapıldığı için adı da ((C++)++) olarak belirlenmiş. ((C++)++)  gerçekten uzun bir isim kısaltmak için ise bu 4 tane + yı birleştirmişler ve ortaya # çıkmış. 
 Sonrası zaten zor değil, C ile # birleştirip C# yapmışlar.
 
-C# ile Konsol uygulamaları, form uygulamaları, Windows phone uygulamaları yapabilirsiniz. Popular oyun motoru <b>Unity</b> de C# dilini kullanır. 
+C# ile Konsol uygulamaları, form uygulamaları, Windows phone uygulamaları yapabilirsiniz. Popüler oyun motoru <b>Unity</b> de C# dilini kullanır. 
 
 C# hakkında biraz bilgiye sahip olduk, şimdi gelelim IDE meselesine...
 <br>
