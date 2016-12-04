@@ -2,7 +2,7 @@
 layout: post
 title: C# Nedir ? - IDE Tavsiyesi
 ---
-
+![csharp]({{ site.baseurl }}/images/csharp-nedir.jpg)
 Merhaba,
 C# notlarımın 1. bölümünde C# hakkında kısaca bilgi verip, kullandığım IDE den bahsedeceğim.
 
