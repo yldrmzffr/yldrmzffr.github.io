@@ -79,7 +79,7 @@ Algoritma yeteneğini geliştirmek için bazı oyunlar var gerçekten faydası o
 <b>Neyse yeter bu kadar. Kendinize iyi bakın bol bol algoritma yazın...</b>
 
 LightBot Algoritma geliştirme oyununu oynamak için :
-<a href="/images/algoritma/lightbot.swf"> LightBot<a>
+<a href="https://lightbot.com/index.html"> LightBot<a>
 
 
 
