@@ -36,32 +36,38 @@ Gündeme arada gelen “Kodlama dersi zorunlu olsun.” olayına sıcak bakıyor
 
 <b>İlk önce dikkat edilmesi gerekenler </b>
 
-Her adım son derece belirleyici olmalıdır. Hiç bir şey şansa bağlı olmamalıdır.
-Belirli bir sayıda adım sonunda algoritma sonlanmalıdır.
-Algoritmalar karşılaşılabilecek tüm ihtimalleri ele alabilecek kadar genel olmalıdır.
+   Her adım son derece belirleyici olmalıdır. 
+   
+   Hiç bir şey şansa bağlı olmamalıdır.
+   
+   Belirli bir sayıda adım sonunda algoritma sonlanmalıdır.
+   
+   Algoritmalar karşılaşılabilecek tüm ihtimalleri ele alabilecek kadar genel olmalıdır.
+   
+   
 
 
 
-Şimdİ karşılaştığımız bir sorunu çözmek için algoritma yazalım ve akış diyagramı ile gösterelim.
+Şimdi karşılaştığımız bir sorunu çözmek için algoritma yazalım ve akış diyagramı ile gösterelim.
 
 <b>Gece gece çalışma isteği geldi kahveni veya çayını hazırladın bir hevesle masana oturdun ama masa lambası çalışmıyor. Şimdi durumu çözmek için algoritma belirleyelim.</b>
 
 
-<b>Adım 1:</b> Başla
+ <b>Adım 1:</b> Başla
 
-<b>Adım 2:</b> Lambanın Fişini Kontrol et. Takılı ise “Adım 4” e geç.
+ <b>Adım 2:</b> Lambanın Fişini Kontrol et. Takılı ise “Adım 4” e geç.
 
-<b>Adım 3:</b> Lambanın fişini tak.
+ <b>Adım 3:</b> Lambanın fişini tak.
 
-<b>Adım 4:</b> Ampulu kontrol et. Sağlamsa “Adım 7” ya geç.
+ <b>Adım 4:</b> Ampulu kontrol et. Sağlamsa “Adım 7” ye geç.
 
-<b>Adım 5:</b> Ampulu değiştir.
+ <b>Adım 5:</b> Ampulu değiştir.
 
-<b>Adım 6:</b> Çalıştıysa “Adım 8” e geç.
+ <b>Adım 6:</b> Çalıştıysa “Adım 8” e geç.
 
-<b>Adım 7:</b> Yeni Masa Lambası al.
+ <b>Adım 7:</b> Yeni Masa Lambası al.
 
-<b>Adım 8:</b> Sorun Çözüldü.
+ <b>Adım 8:</b> Sorun Çözüldü.
 
 
 Evet Algoritmamızı yazdık şimdide bunu <b>Akış Diyagramı ile gösterelim</b>:
@@ -73,7 +79,7 @@ Evet Algoritmamızı yazdık şimdide bunu <b>Akış Diyagramı ile gösterelim<
 
 Kendinizi geliştirmek istiyorsanız bir defter alın, bu deftere günlük hayatta yaptıklarınızın algoritmalarını yazın, kahve yapma algoritması, çay demleme algoritması, yumurta pişirme algoritması gibi basitlerden başlayıp giderek karmaşıklaştırın not hesaplama algoritmaları, denklem  çözme algoritmaları... gibi zaman zaman internetteki örnekleri inceleyin. Herşeyi algoritmayla düşünmeye çalışın.
 
-Algoritma yeteneğini geliştirmek için bazı oyunlar var gerçekten faydası oluyor, benim en çok sevdiğim <b>“Light Bot”</b> oyunu linki aşağıda mevcut.
+Algoritma yeteneğini geliştirmek için bazı oyunlar var gerçekten faydası oluyor, benim en çok sevdiğim <b>“Light Bot”</b> oyunu linki aşağıda mevcut. Oyun demo minik bir swf versiyonu sitede var eğer gerçek anlamda fayda görmek istiyorsanız full sürümünü satın almanızı öneririm fazla bir ücreti yok 3$ kadar, aldığınıza kesinlikle değeceğini düşünüyorum.
 
 
 <b>Neyse yeter bu kadar. Kendinize iyi bakın bol bol algoritma yazın...</b>
