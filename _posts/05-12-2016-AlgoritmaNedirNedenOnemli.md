@@ -3,7 +3,7 @@ layout: post
 title: Algoritma Nedir? Neden Önemlidir ?
 ---
 <b>Bu yazıda konumuz Algoritma.</b>
-Yazılıma merakınız var ise biraz araştırma yaptıysanız “Kod yazmak önemli değil, önemli olan algritma.” kelimesini veya benzerlerlerini sıkça duymuşunuzdur.
+Yazılıma merakınız var ise biraz araştırma yaptıysanız “Kod yazmak önemli değil, önemli olan algoritma.” kelimesini veya benzerlerlerini sıkça duymuşunuzdur.
 ![_algoritma.jpg]({{ site.baseurl }}/images/algoritma/algoritma.jpg)
 
 ### Nedir bu Algoritma ?
@@ -79,7 +79,7 @@ Algoritma yeteneğini geliştirmek için bazı oyunlar var gerçekten faydası o
 <b>Neyse yeter bu kadar. Kendinize iyi bakın bol bol algoritma yazın...</b>
 
 LightBot Algoritma geliştirme oyununu oynamak için :
-<a href="https://lightbot.com/index.html"> LightBot<a>
+<a href="https://lightbot.com/index.html" target="_blank"> LightBot<a>
 
 
 
