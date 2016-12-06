@@ -2,17 +2,6 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    {{ page.date | date: "%e.%m.%Y" }} Tarihinde Yazıldı..
-  </div>
-  
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- gitblog -->
 <ins class="adsbygoogle"
@@ -23,6 +12,17 @@ layout: default
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    {{ page.date | date: "%e.%m.%Y" }} Tarihinde Yazıldı..
+  </div>
   
 {% include disqus.html %}
 </article>
