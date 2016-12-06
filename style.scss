@@ -278,6 +278,33 @@ katalog img:hover{
 	-webkit-transition:all 0.2s ease-in-out;
 }
 
+
+altmen img{
+	max-width: 60px;
+	border-radius: 100%;
+
+   -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+	transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
+altmen alt:hover{
+	border-radius: 100%;
+
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+}
+
+
 katalog i{
 transform: scale(1);
 	transition:all 0.2s ease-in-out;
