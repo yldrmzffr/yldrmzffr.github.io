@@ -4,7 +4,7 @@ title: Herşeyim Silindi... Kısa Bir Sınav Arası
 ---
 ![_ara.png]({{ site.baseurl }}/images/ara.png)
 
-###Merhaba
+### Merhaba
 
 Uzun bir süre oldu yazı paylaşmayalı. İlk bu blogu açtığımda planlarım çok farklıydı haftada bir yazı paylaşacaktım ve burası güzel bir not defteri olacaktı. Zaten sözde yazılarımın, kodlarımın, örneklerimin çoğu hazırdı haftada bir paylaşacaktım. Ayda 50-60 kişi okusa yeter diye düşünüyordum. İşler hiçte düşündüğüm gibi olmadı… 
 
@@ -17,7 +17,7 @@ Uzun bir süre oldu yazı paylaşmayalı. İlk bu blogu açtığımda planlarım
 
 
 
-###Windows Başarıyla Hata Verdi
+### Windows Başarıyla Hata Verdi
 
 
 Evet, keşke Windows kendini imha etmeseydi de resmini gösterseydim…
@@ -28,7 +28,7 @@ Güncellemeyi yüklemeye başladım. Bilgisayar birkaç kez yeniden başladı, b
 
 
 
-###Linux u sildi(m)
+### Linux u sildi(m)
 
 Pencerenin en altında ise sözde açıklama bölümü, orada da değişik bir hata kodu. Google da araştırdım, hiç Türkçe kaynak yok Microsoft un sitesinde arattım, bu sorunla tek karşılaşan ben değilmişim. <b>Daha önce birkaç kişide aynı dertten muzdarip olmuş tabi sorun çözülmüş.</b> Bir hevesle orada yazanları uygulamaya başladım, pekte bir işlem yok iki satır komut. Komutları okumadım bile (burada galiba sorun bende) Microsoft un sitesi güvenilir herhalde diye atladım. Hemen kopyala yapıştır <b>bilgisayarıma yeni, bom boş, ter temiz bir sabit disk bölümü geldi</b> hem de tamı tamına 60GB. Evet, benim Linux alanıda 60GB (idi). Neyse ki önemli kodlarımın yedeğini almıştım.
 
@@ -36,7 +36,7 @@ Pencerenin en altında ise sözde açıklama bölümü, orada da değişik bir h
 
 
 
-###Windows Kendini İmha Etti
+### Windows Kendini İmha Etti
 
 <b>Giden gitmiştir</b>, tekrar kurarım dedim ve güncelleyiciyi tekrar başlattım. 
 Birkaç işlem yaptı ve bilgisayarı sözde yeniden başlatmak üzere kapattı. Bilgisayar boot ekranında kaldı. İlk aklıma gelen Linux un silinmesi oldu, çünkü ilk Linux grub boot açılıyor, oradan Windows a geçiş yapılıyordu. Windows onarma işlemi yapsam düzeleceğini düşündüm, daha öncede benzerini aynı yöntemle çözmüştüm. Bu sefer işe yaramadı yine boot ekranında kaldı. Harddisk yanmış olabilir düşüncesiyle live cd takıp harddisk in durumuna baktım. Allahtan harddisk sağlam ama ortalıkda ne Windows var nede Linux sadece yedek disk kalmış. Buna da şükür diyerek Manjaro mu ve Windows u yeniden kurdum. <b>Ama akıllandım artık Windows a güncelleme yapmacağım. Ve her daim yedek alacağım. </b>
@@ -45,7 +45,7 @@ Birkaç işlem yaptı ve bilgisayarı sözde yeniden başlatmak üzere kapattı.
 
 
 
-###Bir süre ara
+### Bir süre ara
 
 <b>YGS ve LYS yaklaştığı için notlara bir süre ara vereceğim. </b>
 Sınavlar bir geçsin en başta <b>Arttırılmış gerçekçilik</b> olmak üzere birçok anlatım ve not ile geri döneceğim.
