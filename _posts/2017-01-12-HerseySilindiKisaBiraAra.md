@@ -10,8 +10,12 @@ Uzun bir süre oldu yazı paylaşmayalı. İlk bu blogu açtığımda planlarım
 
 
 İlk önce istediğimden çok daha fazla ziyaretçi aldım. Belirlediğim aylık 50-60 kişi hedefi günlük oldu benim için. Yazı bile sayılamayacak iki karalamada <b>bu sayfayı bir ayda toplamda 1024 kişi, 2654 defa ziyaret etti</b> bu beni iyice gaza getirdi. Yazdım yazıları biriktirdim ve her şey yolunda giderken her zamanki hatayı tekrar yaptım. Bu hata yüzünden yazdığım onlarca kod buhar oldu. <b> Windows a güvenip yedek almadım.</b>
+
+
 Önceki bir yazımda C# IDE tavsiyesi olarak <b>SharpDevelop</b> vermiştim. Tanımadığım, yazılarımı okuyan 2 abimden, <b>Visual Studio 2015</b> in 
 <b>Community versiyonu ücretsiz</b> olduğuna dair mailler aldım. Mail in biri sadece bilgilendirme amaçlı iken,  diğeri ise <b>SharpDevelop</b> a saydırmış (İhsan abi ye selamlar  ). Daha gelişmiş olduğu için <b>Visual Studio</b> ile anlatmamın daha iyi olabileceğini düşündüm. Aslında, başlangıçta sitede paylaşacağım basit örneklerde IDE nin bir farkı yok. <b>Yazılan kod aynı olduktan sonra ha SharpDevelop, ha Visual Studio.</b> Ama yine de Visual Studio 2015 kurmaya karar verdim.  Öncesinde Windows7 yi SP1 e güncellemem gerekiyor imiş. Hemen indirdim güncellemeyi kuruluma başladım.
+
+
 <b>Zaten ne olduysa hep bundan sonra oldu.</b>
 
 
@@ -21,6 +25,7 @@ Uzun bir süre oldu yazı paylaşmayalı. İlk bu blogu açtığımda planlarım
 
 
 Evet, keşke Windows kendini imha etmeseydi de resmini gösterseydim…
+
 Güncellemeyi yüklemeye başladım. Bilgisayar birkaç kez yeniden başladı, bende sanıyorum iş yapıyor. Bir kurulum tamamlandı penceresi. Pencerenin başlığı iyi haberi veriyor “Başarıyla Tamamlandı.” pencerenin içeriği de çok ilginç “Hata.”. 
 <b>Yani Windows başarıyla hata verdi.</b>  Şaşkınlık içinde ekran görüntüsü aldım, burada paylaşmak için kaydettim ama nasip olmadı. 
 
@@ -50,8 +55,8 @@ Birkaç işlem yaptı ve bilgisayarı sözde yeniden başlatmak üzere kapattı.
 <b>YGS ve LYS yaklaştığı için notlara bir süre ara vereceğim. </b>
 Sınavlar bir geçsin en başta <b>Arttırılmış gerçekçilik</b> olmak üzere birçok anlatım ve not ile geri döneceğim.
 
-<b>Windows a asla güvenmemeniz gerektiğini unutmamanız temennimle. 
+<b>Windows a asla güvenmemeniz gerektiğini unutmamanız temennimle. </b>
 
 
-Kendinize iyi bakın.</b>
+<b> Kendinize iyi bakın.</b>
 
