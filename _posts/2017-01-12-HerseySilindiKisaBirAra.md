@@ -49,6 +49,11 @@ Birkaç işlem yaptı ve bilgisayarı sözde yeniden başlatmak üzere kapattı.
 
 
 
+![_kendiniimha.gif]({{ site.baseurl }}/images/kendiniimha.gif)
+
+
+
+
 
 ### Bir süre ara
 
