@@ -1,3 +1,10 @@
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
 </ifmodule>
 <ifModule mod_gzip.c>
 mod_gzip_on Yes
