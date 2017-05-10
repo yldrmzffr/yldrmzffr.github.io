@@ -1,8 +1,3 @@
-/*!
- *  JOSEPH - HTML Coming Soon Page
- *  Author: MUUteam / Lukasz Florczak
- *  http://muuteam.com
- */
 
 $(document).ready(function() { 
 
