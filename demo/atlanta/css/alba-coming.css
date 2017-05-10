@@ -1,0 +1,513 @@
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+    height: 100%;
+    min-height: 750px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.col-xs-1, .col-xs-3, .col-xs-4, .col-xs-6, .col-xs-8, .col-xs-12 {
+    padding: 0;
+}
+
+.col-sm-8 {
+    padding: 0;
+}
+
+.col-md-3, .col-md-4, .col-md-6, .col-md-12 {
+    padding: 0;
+}
+
+.col-lg-3, .col-lg-4, .col-lg-6, .col-lg-12 {
+    padding: 0;
+}
+
+.full-container {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) url(../img/wall-coming.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*** Change color div ***/
+.change-color {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 30;
+}
+
+.contain-color {
+    height: 100%;
+    margin-left: 200px;
+}
+
+.one-color {
+    height: 100%;
+    width: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+    cursor: pointer;
+}
+
+.one-color h3 {
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 35px;
+}
+
+#color-green {
+    background: rgba(44, 215, 52, 0.7);
+}
+
+#color-red {
+    background: rgba(244, 58, 58, 0.7);
+}
+
+#color-yellow {
+    background: rgba(255, 207, 10, 0.7);
+}
+
+#color-blue {
+    background: rgba(60, 181, 255, 0.7);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+/*** Popus ***/
+.popup {
+    position: absolute;
+    top: 155px;
+    padding: 2px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    transform: scale(0);
+    border-radius: 5px;
+    font-weight: 400;
+    transition: all 0.3s ease-out;
+}
+
+.popup p {
+    margin-top: 6px;
+}
+
+.triangle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 6px solid transparent;
+    top: 8px;
+}
+
+#popup1 .triangle {
+    right: -21px;
+    border-left: 15px solid rgba(0, 0, 0, 0.5);
+}
+
+#popup2 .triangle {
+    left: -21px;
+    border-right: 15px solid rgba(0, 0, 0, 0.5);
+}
+
+/*** Style of every content ***/
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.2s ease-out
+}
+
+/*** First Content ***/
+.round-logo {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    background: #79EA7F;
+    color: #fff;
+    margin: auto;
+    z-index: 20;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 35px;
+    padding: 12px;
+    margin-top: 0;
+    transition: all 0.1s ease-out;
+}
+
+.round-logo:hover {
+    margin-top: 3px;
+}
+
+/*** Full content of home page - Contains 2 parts : Highblock and Lowblock ***/
+.outerblock {
+    margin-top: 150px;
+    border-radius: 3px;
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+}
+
+/*** Highblock - Contains 4 parts : col-xs-1, title-highblock, col-xs-1 and count-highblock ***/
+.highblock {
+    height: 250px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.highblock .col-xs-1 span {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.1s ease-out;
+}
+
+.highblock .col-xs-1 span:hover {
+    margin-top: 4px;
+}
+
+.title-highblock {
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+}
+
+.count-highblock {
+    height: 170px;
+}
+
+/*** Countdown ***/
+.countdown-row {
+    display: block;
+    text-align: center;
+}
+
+.countdown-section {
+    border-left: 1px dotted #dadada;
+    border-color: rgba(218, 218, 218, 0.8);
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 12px 4px;
+    margin: 34px 0 24px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.countdown-section:first-child {
+    border-left: 0;
+}
+
+.countdown-amount {
+    color: #fff;
+    display: block;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: normal;
+    line-height: 1;
+    padding-bottom: 21px;
+}
+
+/*** Lowblock - Contains newsblocks and one menublock (end part) ***/
+.lowblock {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*** Newsblock - Contains 3 parts : the newsblock-in ***/
+.newsblock {
+    height: 60px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.1);
+    cursor: pointer;
+    color: rgba(210, 210, 210, 0.7);
+}
+
+.newsblock:hover {
+    color: white;
+    background: rgba(44, 215, 52, 0.8);
+}
+
+.newsblock-in {
+    height: 100%;
+    line-height: 60px;
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+    border-left: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.newsblock-in span {
+    font-size: 22px;
+    margin-top: 16px;
+}
+
+.menublock {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    color: rgba(200, 200, 200, 0.5);
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.menublock:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(44, 215, 52, 0.7);
+}
+
+/*** Second content - Contact Page ***/
+#content2 {
+    padding-top: 150px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*** Cross to return on the home page ***/
+.close-logo {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/*** Form ***/
+.contact {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.form-horizontal, .form-group {
+    height: 100%;
+}
+
+.form-horizontal .form-group {
+    margin: 0;
+}
+
+.form-control {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    height: 100%;
+    font-size: 14px;
+    color: #222;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 15px;
+    border: 1px solid rgba(200, 200, 200, 0.4);
+}
+
+.form-control:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-send {
+    background: rgba(44, 215, 52, 0.5);
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #888;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    border-left: 0;
+    color: white;
+    transition: all 0.1s ease-out;
+}
+
+.btn-send:hover {
+    background: rgba(44, 215, 52, 0.7);
+}
+
+.form-send {
+    height: 100%;
+}
+
+/*** Third content - Informations Page ***/
+#content3 {
+    padding-top: 150px;
+}
+
+/*** Cross to return on the home page ***/
+#content3 .close-logo {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*** Third full content - Same construction as first content : Newsblock and menublock ***/
+#content3 .outerblock {
+    margin-top: 50px;
+}
+
+#content3 .newsblock {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#content3 .menublock {
+    color: rgba(44, 215, 52, 0.9);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#content3 .menublock:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*** Numbers on the left are white ***/
+.number {
+    color: rgba(44, 215, 52, 0.9);
+}
+
+/*** Change color ***/
+.back-colored {
+    background: #2CD734;
+}
+
+.red-back-colored:hover {
+    background: rgba(244, 58, 58, 0.8);
+}
+
+.red-colored:hover {
+    color: rgba(244, 58, 58, 0.7);
+}
+
+.red-logo {
+    background: #F85D5D;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    color: #fff;
+}
+
+.red-send {
+    background: rgba(244, 58, 58, 0.5);
+}
+
+.red-send:hover {
+    background: rgba(244, 58, 58, 0.7);
+}
+
+.yellow-back-colored:hover {
+    background: rgba(255, 207, 10, 0.8);
+}
+
+.yellow-colored:hover {
+    color: rgba(255, 207, 10, 0.7);
+}
+
+.yellow-logo {
+    background: #FFDC4B;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    color: #fff;
+}
+
+.yellow-send {
+    background: rgba(255, 207, 10, 0.5);
+}
+
+.yellow-send:hover {
+    background: rgba(255, 207, 10, 0.7);
+}
+
+.blue-back-colored:hover {
+    background: rgba(60, 181, 255, 0.8);
+}
+
+.blue-colored:hover {
+    color: rgba(60, 181, 255, 0.7);
+}
+
+.blue-logo {
+    background: #6DC8FF;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    color: #fff;
+}
+
+.blue-send {
+    background: rgba(60, 181, 255, 0.5);
+}
+
+.blue-send:hover {
+    background: rgba(60, 181, 255, 0.7);
+}
+
+/*** Animation on contents ***/
+.zeroscale {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+}
+
+.normalscale {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+/*** Media queries ***/
+@media only screen and (max-width: 600px) {
+    .newsblock-in {
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .number {
+        margin-top: 10px;
+    }
+
+    .countdown-amount {
+        font-size: 45px;
+    }
+
+    #content3 .menublock h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .newsblock-in {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .countdown-amount {
+        font-size: 25px;
+    }
+
+    #content3 .menublock h3 {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}
