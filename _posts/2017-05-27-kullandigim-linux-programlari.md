@@ -6,14 +6,15 @@ title: Kullandığım Linux Programları
 
 
 Merhaba <br/>
-Linux, Windows ya da Mac olsun herkesin sistemi ilk kurduktan sonra yükleyeceği olmazsa olmaz programları vardır. Bu programları yüklemeden kendimizi, bilgisayarımızı eksik hissederiz. <br/>
+Linux, Windows ya da Mac olsun herkesin sistemi ilk kurduktan sonra yükleyeceği olmazsa olmaz programları vardır. Bu programları yüklemeden kendimizi, bilgisayarımızı eksik hissederiz.
+
 Bende bu yazıda Linux de olmazsa olmaz programlarımı kısaca tanıtacağım.
 <br/>
 ## İşte Olmazsa Olmazlarım
 <br/>
 <br/>
 ### 1. Chromium Browser
-<br/>
+
 ![Chromium]({{ site.baseurl }}/images/linux/program/chromium.png)
 
 <br/>
