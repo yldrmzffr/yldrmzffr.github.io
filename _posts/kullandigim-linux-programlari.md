@@ -3,8 +3,10 @@ layout: post
 title: Kullandığım Linux Programları
 ---
 ![olmazsaolmaz]({{ site.baseurl }}/images/linux/program/olmazsaolmaz.png)<br/>
+
+
 Merhaba <br/>
-Linux, Windows ya da Mac olsun herkesin sistemi ilk kurduktan sonra yükleyeceği olmazsa olmaz programları vardır. Bu programları yüklemeden kendimizi, bilgisayarımızı eksik hissederiz. <br/>
+Linux, Windows ya da Mac olsun herkesin sistemi ilk kurduktan sonra yükleyeceği olmazsa olmaz programları vardır. Bu programları yüklemeden kendimizi, bilgisayarımızı eksik hissederiz. </br>
 Bende bu yazıda Linux de olmazsa olmaz programlarımı kısaca tanıtacağım.
 <br/>
 ## İşte Olmazsa Olmazlarım
@@ -51,12 +53,12 @@ GParted disk bölümleme, biçimlendirme vb. işlemlerde en iyilerden biri (benc
 
 <br/>
 Güncelleme, yarı kalan indirme, kaldırılan uygulamalar ve gezdiğimiz web siteleri bilgisayarımızda atık dosyalar bırakıyorlar bu doyaları temizlemek için kullanılan BleachBit Windows da ki Ccleaner ın Linux alternatifi diyebiliriz. Sistemdeki artık dosyaları temizleme konusunda oldukça başarılı.<br/><br/>
-### 7. CyberDuck
+### 7. Grub Customizer
 <br/>
-![cyberduck]({{ site.baseurl }}/images/linux/program/cyberduck.png)
+![grubcustomizer]({{ site.baseurl }}/images/linux/program/grubcustomizer.png)
 
 <br/>
-FTP yazılımı olan CyberDuck biraz fazla işlemci kullansa da şimdiye kadar kullandığım en iyi FTP Client diyebilirim. Logosundaki ördek benim CyberDuck ı sevme nedenlerimden biri. :)
+Birden fazla işletim sistemi kullananlar için, otomatik boot edilecek sistemi, bekleme süresini ve menu tasarımını değiştirebileceğiniz, çok kolay kullanımı olan bir grub düzenleyici.
 <br/><br/>
 ### 8. Guayadeque Music Player
 <br/>
