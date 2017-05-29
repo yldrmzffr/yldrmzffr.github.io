@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Herşeyim Silindi... Kısa Bir Sınav Arası
+category: Diğer
 ---
 ![_ara.png]({{ site.baseurl }}/images/ara.png)
 
