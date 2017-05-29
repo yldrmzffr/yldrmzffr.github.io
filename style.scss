@@ -100,6 +100,8 @@ blogyaz a {
 }
 
 
+
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -400,6 +402,9 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+#yukari{bottom:5px;right:5px;background:#147;padding:5px;color:#fff;font:bold 14pt verdana;position:fixed;display:none;}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
