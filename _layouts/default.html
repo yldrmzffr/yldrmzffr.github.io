@@ -62,4 +62,19 @@
 
     {% include analytics.html %}
   </body>
+  
+  <script type="text/javascript">
+    $(function() {
+        $("#yukari").click(function() {
+            $("html,body").stop().animate({ scrollTop: "0" }, 1000);
+        });
+    });
+    $(window).scroll(function() {
+        var uzunluk = $(document).scrollTop();
+        if (uzunluk > 300) $("#yukari").fadeIn(500);
+        else { $("#yukari").fadeOut(500); }
+    });
+</script>
+
+  
 </html>
