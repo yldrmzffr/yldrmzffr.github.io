@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Bağış - Muzaffer YILDIRIM</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <center>
+        <br>
+       
+        <h1>Bağış yapın</h1>
+        <p>
+            Şuan için hiçbir ihtiyacım yok.. <br> Bu bağışa daha çok ihtiyacı olanlar var.
+        </p>
+        <p>
+            <h2>Yönlendiriliyor</h2>
+            <p>
+            <div id="dl"></div> <br>  Beklememek için 
+            <a href="https://www.losev.org.tr/bagis/Bagis.html">Tıklayın</a>
+            </p>
+           
+        </p>
+
+    </center>
+</body>
+<script type="text/javascript">
+ 
+var sure=10; 
+var zamanIsle;
+function Saniye() {
+document.getElementById("dl").innerHTML = '<b>' + sure + '</b> saniye sonra yönlendirileceksiniz.';
+sure=sure-1; zamanIsle=setTimeout("Saniye()", 1000);
+Kontrol();
+}
+function Kontrol(){
+if(sure <= -1){
+document.getElementById("dl").innerHTML ='<b>Yönlendiriliyor...</b>';
+window.location = "https://www.losev.org.tr/bagis/Bagis.html"
+clearTimeout(zamanIsle);
+   }
+}
+window.onload=Saniye;
+</script>
+</html>
