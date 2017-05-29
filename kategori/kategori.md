@@ -13,5 +13,6 @@ sitemap: false
         {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
     </a>
 </span>
+<br>
 {% endfor %}
 </div>
