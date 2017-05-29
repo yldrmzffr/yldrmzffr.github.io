@@ -403,8 +403,14 @@ footer {
   text-align: center;
 }
 
-#yukari{bottom:5px;right:5px;background:#147;padding:5px;color:#fff;font:bold 14pt verdana;position:fixed;display:none;}
-
+#yukari {
+    bottom: 5px;
+    bottom: 20px;
+    display: none;
+    height: 100px;
+    position: fixed;
+    right: 20px;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
