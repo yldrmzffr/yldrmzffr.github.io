@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Kullandığım Linux Programları
+category: Linux
+tags: [linux programlarım, olmazsa olmaz, popüler, linux, uygulamaları]
 ---
 ![olmazsaolmaz]({{ site.baseurl }}/images/linux/program/olmazsaolmaz.png)<br/>
 
