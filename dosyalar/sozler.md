@@ -1,0 +1,1 @@
+Yetenek Birşeyi Yapmak İstemektir.
