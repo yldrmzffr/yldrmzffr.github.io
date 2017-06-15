@@ -31,6 +31,8 @@ Eskiden, MSN zamanında karşı taraf cevap vermediği zaman mesajımızı tekra
 
 "Butonİsmi" yazan yerlere kendi butonumuzun adı yazılacak..
 <br>
+
+
 Kodlarda bulunan for döngüsündeki 50 sayısı formumuzdaki titreşim sayısını dolayısıyla titreme süresini belirler. Bu sayıyı arttırarak tireşim sayısı ve süresi arttırılabilir.
 
 
