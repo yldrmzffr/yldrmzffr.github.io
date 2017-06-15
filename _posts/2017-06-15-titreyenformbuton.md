@@ -18,8 +18,6 @@ Eskiden, MSN zamanında karşı taraf cevap vermediği zaman mesajımızı tekra
 
 <b>Şimdi bu titremeyi C# da formumuza yapalım.</b>
 
-<br>
-
 
 <script src="https://gist.github.com/yldrmzffr/9803e31ed1c5f9b25dff64595b385215.js"></script>
 
@@ -28,15 +26,20 @@ Eskiden, MSN zamanında karşı taraf cevap vermediği zaman mesajımızı tekra
 
 <b>Şimdi de Butonu titretelim..</b>
 
-<br>
 
 <script src="https://gist.github.com/yldrmzffr/bc1a9e9a1f9f199dfff29609c723a2ef.js"></script>
 
+"Butonİsmi" yazan yerlere kendi butonumuzun adı yazılacak..
+<br>
+Kodlarda bulunan for döngüsündeki 50 sayısı formumuzdaki titreşim sayısını dolayısıyla titreme süresini belirler. Bu sayıyı arttırarak tireşim sayısı ve süresi arttırılabilir.
+
+
+Yine aynı şekilde Random daki -2 ve 2 sayısı formumuzun titreşeceği mesafeyi belirler. Bu sayıyıda değiştirerek formumuzun titreşeceği mesafeyi-alanı değiştirebiliriz.
 
 <br><br>
 
 <b>İşte Sonuç :</b>
-<br>
+
 ![titreyen-form]({{ site.baseurl }}/images/titre/form.gif)
 
 <br><br>
