@@ -1,21 +1,10 @@
 ---
 layout: default
 ---
-        <baslik>
-
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%e.%m.%Y" }} - {{ post.title }}</a></h1>
-<blogyaz >
-      <div class="entry">
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
-        
-      </div>
-            </blogyaz>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Devamını Oku</a>
     </article>
   {% endfor %}
 </div>
-        </baslik>
