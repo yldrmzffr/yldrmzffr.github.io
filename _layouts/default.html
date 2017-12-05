@@ -41,14 +41,9 @@
     </div>
 
     <div id="main" role="main" class="container">
-     {{ page.date | date: "%e.%m.%Y" }} - {{ content }}
+    {{ content }}
     </div>
     <center>
----
-<br/><br/><br/>
-      Diğer Notlar<br/>
-      {% include katalog.html %}
-    </center>
     <div class="wrapper-footer">
       <div class="container">
         <katalog>
@@ -58,9 +53,6 @@
           </katalog>
       </div>
     </div>
-
     {% include analytics.html %}
   </body>
-  
-  
 </html>
