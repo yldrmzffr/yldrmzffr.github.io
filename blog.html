@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<div class="posts">
   {% for post in site.posts %}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%e.%m.%Y" }} - {{ post.title }}</a></h1>
   {% endfor %}
-</div>
