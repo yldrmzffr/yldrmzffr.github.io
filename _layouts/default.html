@@ -41,7 +41,7 @@
     </div>
 
     <div id="main" role="main" class="container">
-      {{ content }}
+     {{ page.date | date: "%e.%m.%Y" }} - {{ content }}
     </div>
     <center>
 ---
