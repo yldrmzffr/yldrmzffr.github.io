@@ -7,7 +7,7 @@ title: Keşan'da Öğrenci Olmak - Keşan'da Yaşam
 <br/>
 Merhaba.<br/>
 Bu yazıda yaklaşık 8 ay yaşadığım Keşan ı ve dikkatimi
- çekenleri anlatmaya çalışacağım. Herkes gideceği yeri merak eder, 
+ çekenleri anlatmaya çalışacağım. <br/><br/> Herkes gideceği yeri merak eder, 
  araştırır bende çok araştırdım geldim ve fark ettim ki artık <b>birçok şey değişmiş</b> güncel bir yazı gerektiğini düşündüm.
 <br/><br/>
 Öncelikle şunu belirtmek isterim ben Keşan ı sevdim.
