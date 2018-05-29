@@ -3,7 +3,7 @@ layout: post
 category: Karalama
 title: TC Kimlik Numarası Algoritması ve Örnekleri
 ---
-###TC KİMLİK NUMARASI ALGORİTMASI
+### TC KİMLİK NUMARASI ALGORİTMASI
 
 
 TC kimlik numaraları rastgele üretilmiş numaralar değil. Belirli bir algoritmaya göre üretilmiş.
