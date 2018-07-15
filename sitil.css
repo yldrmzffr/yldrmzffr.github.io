@@ -6,14 +6,14 @@ body {
   text-align: center;
 }
 .foto{
-  width: 11%;
+  width: 150px;
   height: auto;
   margin:5px auto;
   border: 1px solid gray;
 }
 .ortala {
   margin: auto;
-  padding: .5%;
+  padding: 5px;
 }
 .yuvarla{
     border-radius: 100%;
