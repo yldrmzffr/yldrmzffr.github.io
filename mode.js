@@ -7,6 +7,8 @@
   document.h4.style.color = '#fff';
   document.h5.style.color = '#fff';
   document.h6.style.color = '#fff';
+  document.a.style.color = '#ef2121';
+  
  }
  function okuma() {
      document.body.style.backgroundColor = '#ece1cb';
@@ -17,6 +19,7 @@
   document.h4.style.color = '#604f31';
   document.h5.style.color = '#604f31';
   document.h6.style.color = '#604f31';
+  document.a.style.color = '#ef2121';
  }
  function beyaz() {
      document.body.style.backgroundColor = '#fff';
@@ -27,4 +30,5 @@
   document.h4.style.color = '#000';
   document.h5.style.color = '#000';
   document.h6.style.color = '#000';
+  document.a.style.color = '#ef2121';
  }
