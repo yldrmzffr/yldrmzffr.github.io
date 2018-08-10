@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Muzaffer
+name: Muzaffer Yıldırım
 
 # Short bio or description (displayed in the header)
-description: Blog
+description: Software Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/yldrmzffr/yldrmzffr.github.io/master/images/me.jpg
@@ -19,7 +19,7 @@ avatar: https://raw.githubusercontent.com/yldrmzffr/yldrmzffr.github.io/master/i
 footer-links:
   dribbble:
   email: yldrmzffr@gmail.com
-  facebook:
+  facebook: yldrmzffr
   flickr:
   github: yldrmzffr
   instagram: yldrmzffr
