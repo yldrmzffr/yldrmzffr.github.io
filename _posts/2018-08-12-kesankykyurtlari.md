@@ -64,3 +64,4 @@ Devlet yemek yardımı yapıyor. Bu yardım her sene değişiyor. Bu sene <b>sab
 
 
 19 Kasım ve Hacı İlbey Blokları <b>okula daha yakın</b> olsa da, tüm yurtlardan okula ulaşım (Keşan Yusuf Çapraz Uygulamalı Bilimler Yüksekokulu için) dolmuşlarla sağlanıyor.
+ 
