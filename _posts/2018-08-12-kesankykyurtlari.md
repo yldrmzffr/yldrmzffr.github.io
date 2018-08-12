@@ -37,7 +37,7 @@ Sabah kahvaltı iyi birçok çeşit var, sanırım <b>sabah 06.00 da başlıyor 
 
 Bu bloklar şehrin daha dışında <b>merkeze 3-4 km mesafede</b>. Gece yurda son giriş saati 23.00 olduğunu düşünürsek çarşıda otururken daha erken kalkmak zorunda kalabilirsiniz. Yurdun önünden dolmuş geçiyor ve çok sık geçiyor <b>ulaşımda sorun yaşamazsınız</b>. Her türlü işinizde çarşıya gitmeniz gerekebilir, bu konuda sorun yaratabilir.
 
-Bu yurtda binalar <b>daha iyi</b> diyebilirim. Odalar yine 3-4 kişilik, daha yeni yapılmış ve <b>her odanın kendi içinde çalışma odası banyo ve tuvaleti var</b>. Tabi her oda kendisi kullandığı için daha temiz banyo tuvalet ama bir oda da aynı anda 2 kişi tuvalete girecek olursa sıkıntı olduğunu söylemişlerdi veya sabah banyo sırası problem olabiliyormuş.
+Bu yurtda binalar <b>daha iyi</b> diyebilirim. Odalar yine 3-4 kişilik, daha yeni yapılmış ve <b>her odanın kendi içinde çalışma odası banyo ve tuvaleti var</b>. Tabi her oda kendisi kullandığı için daha temiz banyo tuvalet ama bir oda da aynı anda 2 kişi tuvalete girecek olursa sıkıntı olduğunu söylemişlerdi veya sabah banyo sırası problem olabiliyormuş. 
 
 Her odanın kendi çalışma alanı vs. olup, ortak alan daha az olduğundan odalar arası <b>çok samimiyet, sohbet yok</b>. En azından gazi bloğu kadar.
 
