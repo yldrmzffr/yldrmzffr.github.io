@@ -46,7 +46,7 @@ Daha az olsa da yemek konusunda aynı <b>sıkıntılar bu bloklarda da yaşanıy
 
 ## Keşan KYK Kız Öğrenci Yurdu
 
-<b>Kız yurtları hakkında Seda'nın yazısını okuyabilirsiniz.</b>
+<font color = "red"><b><a href="https://rengiminilkyuzu.blogspot.com/2018/08/kesan-da-kz-kyk-yurdu.html">Kız yurtları hakkında Seda'nın yazısını okuyabilirsiniz.</a></b></font>
 
 ## Ortak Konular
 
