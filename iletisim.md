@@ -7,14 +7,13 @@ permalink: /iletisim/
   Bana tüm sosyal medya hesaplarından yldrmzffr kullanıcı adı ile ulaşabilirsiniz.
 <br>
   Sosyal medyada fazla vakit geçiren biri olmadığım için Telegram dan veya mail ile daha hızlı ulaşabilirsiniz.
-<br><br>
-
-    Telegram : <a href="https://t.me/yldrmzffr/">yldrmzffr</a><br>
-    github   : <a href="https://github.com/yldrmzffr/">yldrmzffr</a><br>
-    linkedin : <a href="https://linkedin.com/in/yldrmzffr/">yldrmzffr<a><br>
-    twitter  : <a href="https://twitter.com/yldrmzffr/">yldrmzffr<a><br>
-    instagram: <a href="https://instagram.com/yldrmzffr/">yldrmzffr<a><br>
-    facebook : <a href="https://facebook.com/yldrmzffr/">yldrmzffr<a><br>
+<br>
+    <a href="https://t.me/yldrmzffr/">Telegram : yldrmzffr</a><br>
+    <a href="https://github.com/yldrmzffr/">github   : yldrmzffr</a><br>
+    <a href="https://linkedin.com/in/yldrmzffr/">linkedin : yldrmzffr<a><br>
+    <a href="https://twitter.com/yldrmzffr/">twitter  : yldrmzffr<a><br>
+    <a href="https://instagram.com/yldrmzffr/">instagram: yldrmzffr<a><br>
+    <a href="https://facebook.com/yldrmzffr/">facebook : yldrmzffr<a><br>
 <br>
 <br>
 <b>
