@@ -75,27 +75,27 @@ a {
   color: $black;
   text-decoration: none;
 	cursor: pointer;
-		transition:all 0.9s ease-in-out;
-	-moz-transition:all 0.9s ease-in-out;
-	-webkit-transition:all 0.9s ease-in-out;
+		transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
   &:hover, &:active {
     color: $blue;
-	  	transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
+	 transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
   }
 }
 
 blogyaz a {
-  color: $gray;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
-		transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
+		transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
   &:hover, &:active {
     color: $black;
-	  	
+
   }
 }
 
@@ -151,7 +151,7 @@ baslik img:hover{
 
 img{
 	max-width: 100%;
- 
+
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -424,4 +424,3 @@ footer {
 @import "reklamalan";
 @import "highlights";
 @import "svg-icons";
-
