@@ -64,3 +64,10 @@ Devlet yemek yardımı yapıyor. Bu yardım her sene değişiyor. Bu sene <b>sab
 
 
 19 Kasım ve Hacı İlbey Blokları <b>okula daha yakın</b> olsa da, tüm yurtlardan okula ulaşım (Keşan Yusuf Çapraz Uygulamalı Bilimler Yüksekokulu için) dolmuşlarla sağlanıyor.
+
+
+Yurtlarda çamaşır yıkama ve kurutma makineleri var. İstediğiniz zaman çamaşırlarınızı yıkayabilirsiniz. Bazen çok sıra olsa da genelde az kişi oluyor.
+
+Gelirken kendi nevresim yastığınızı getirmeyin, kesinlikle içeri alınmıyor ve kullanımı yasak. Yurtta size nevresim veriliyor, istediğiniz zaman temizi ile değiştirebiliyorsunuz.
+
+19 Kasım ve Hacı İlbey Bloklarında ufak spor salonu var maalesef gazi bloğunda yok. Ama Gazi bloğunda kalan öğrencilerde gidip spor salonunu kullanabiliyor.
