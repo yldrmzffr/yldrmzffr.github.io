@@ -194,6 +194,12 @@ img{
 // .masthead
 //
 
+.wrapper-masthead {
+  margin-bottom: 15px;
+}
+
+.masthead {
+  padding: 20px 0;
 
   @include mobile {
     text-align: center;
@@ -246,7 +252,6 @@ img{
     margin: 3px 0;
   }
 }
-
 
 
 nav {
