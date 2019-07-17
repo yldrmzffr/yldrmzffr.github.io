@@ -12,13 +12,21 @@ Home dizinine .pypirc adında bir dosya oluşturun. Içine ise kendi bilgilerini
 <blockquote>
 
 [distutils]
+
 index-servers =
+
 pypi
 
+
+
 [pypi]
+
 repository: https://pypi.python.org/pypi
+
 username: [kullanici_adi]
+
 password: [parola]
+
 </blockquote>
 
 Projeyi Github a push edip
