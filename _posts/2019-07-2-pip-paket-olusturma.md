@@ -10,14 +10,14 @@ Python yükelebilir pip paketi yapma ve pypi a yüklemeyi kısaca yazdım. Bunla
 
 Home dizinine .pypirc adında bir dosya oluşturun. Içine ise kendi bilgilerinizi şu formatta yazın.
 
-    [distutils]
-    index-servers =
-    pypi
+[distutils]
+index-servers =
+pypi
 
-    [pypi]
-    repository: https://pypi.python.org/pypi
-    username: [kullanici_adi]
-    password: [parola]
+[pypi]
+repository: https://pypi.python.org/pypi
+username: [kullanici_adi]
+password: [parola]
 
 Projeyi Github a push edip
 
