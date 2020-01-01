@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+    <script src="https://kit.fontawesome.com/acf2ad0c8b.js" crossorigin="anonymous"></script>
+    // my objects
+    <script src="js/myobjects.js"></script>
+    // tensorflow
+    <script src="js/tfjs.js"></script>
+    // cocossd model
+    <script src="js/coco-ssd.js"></script>
+    // my codes
+    <script src="js/myjs.js"></script>
+    // mycss
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body onload="onload()">
+
+<video hidden id="video1" controls width="944" crossorigin="*">
+    <source src="https://raw.githubusercontent.com/yldrmzffr/testing-log/master/3.mp4" type='video/mp4'>
+</video>
+
+<div id="main">
+    <canvas id='myCanvas' width='944' height="500"></canvas>
+</div>
+<div id="buttons">
+    <i onclick="playVideo()" class="fas fa-play"></i>
+    <i onclick="pauseVideo()" class="fas fa-pause"></i>
+</div>
+</body>
+<script src="js/video.js"></script>
+
+</html>
+
