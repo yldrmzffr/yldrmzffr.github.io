@@ -3,22 +3,28 @@ $(document).ready(() => {
 });
 
 
+const getLocal = (key) => {
+    console.log(key)
+    let value = localStorage.getItem(key);
+    return value===null?[]:JSON.parse(value);
+};
+
+const setLocal = (key, value) => {
+    localStorage.setItem(key,JSON.stringify(value))
+};
+
 const getCodes = () => {
 
-    let codes = localStorage.getItem('codes');
-    if(codes !== null){
+    let codes = getLocal('codes');
         $('.list-group').empty();
-        JSON.parse(codes).forEach(code => {
+        codes.forEach(code => {
             $('.list-group').append(
                 "<button "+
-                "onclick=selectBarcode("+JSON.stringify(code)+
+                "onclick=selectBarcode("+JSON.stringify(code.id)+
                 ") type='button' class='list-group-item list-group-item-action'>"
                 + code.name +
                 "</button>");
         });
-    }else{
-        console.log("Kayıtlı Barkod Yok!");
-    }
     $('.list-group').append(
         "<button type='button' id='save' class='list-group-item list-group-item-action " +
         "btn-outline-success' data-toggle='modal' data-target='#ekleModal'>Yeni Barkod Ekle</button>")
@@ -26,19 +32,23 @@ const getCodes = () => {
 };
 
 const addBarcode = (name,content) => {
-    let codes = localStorage.getItem('codes');
-    codes = codes === null?[]:JSON.parse(codes);
+    let codes = getLocal('codes');
     codes.push({
         id: Math.floor(Date.now()),
         name,
         content
     });
-    localStorage.setItem('codes',JSON.stringify(codes));
+    setLocal('codes',codes);
     getCodes();
 };
 
 
-const selectBarcode = selected => {
+const selectBarcode = selectedid => {
+    let codes = getLocal('codes');
+    let selected = codes.filter(code=> {
+       return code.id === selectedid;
+    })[0];
+    console.log(selected)
     $('#name').text(selected.name);
     $('.barcode').empty();
     $('.barcode').qrcode({
@@ -56,14 +66,11 @@ const save = () => {
 };
 
 const deletebarcode = (id) => {
-    console.log(id)
-    let codes = localStorage.getItem('codes');
-    codes = codes===null?[]:JSON.parse(codes);
-    console.log(codes)
+    let codes = getLocal('codes');
     codes = codes.filter(code => {
-        return code.id != id;
+        return code.id !== id;
     });
-    localStorage.setItem('codes',JSON.stringify(codes));
+    setLocal('codes',codes);
     getCodes()
 };
 
