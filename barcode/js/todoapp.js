@@ -16,13 +16,13 @@ const getCodes = () => {
                 + code.name +
                 "</button>");
         });
-        $('.list-group').append(
-            "<button type='button' id='save' class='list-group-item list-group-item-action " +
-            "btn-outline-success' data-toggle='modal' data-target='#ekleModal'>Yeni Barkod Ekle</button>")
-
     }else{
         console.log("Kayıtlı Barkod Yok!");
     }
+    $('.list-group').append(
+        "<button type='button' id='save' class='list-group-item list-group-item-action " +
+        "btn-outline-success' data-toggle='modal' data-target='#ekleModal'>Yeni Barkod Ekle</button>")
+
 };
 
 const addBarcode = (name,content) => {
