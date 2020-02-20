@@ -1,10 +1,17 @@
 $(document).ready(() => {
     getCodes();
+    $('.barcode').qrcode({
+        text: "Test!"
+    });
+    $("#hotcontentinput").on('change keydown paste input', function(){
+        hotgenerate();
+    });
 });
 
 
+
+
 const getLocal = (key) => {
-    console.log(key)
     let value = localStorage.getItem(key);
     return value===null?[]:JSON.parse(value);
 };
@@ -14,8 +21,8 @@ const setLocal = (key, value) => {
 };
 
 const getCodes = () => {
-
     let codes = getLocal('codes');
+    console.log(codes)
         $('.list-group').empty();
         codes.forEach(code => {
             $('.list-group').append(
@@ -31,12 +38,13 @@ const getCodes = () => {
 
 };
 
-const addBarcode = (name,content) => {
+const addBarcode = (name,content,type) => {
     let codes = getLocal('codes');
     codes.push({
         id: Math.floor(Date.now()),
         name,
-        content
+        content,
+        type
     });
     setLocal('codes',codes);
     getCodes();
@@ -48,19 +56,22 @@ const selectBarcode = selectedid => {
     let selected = codes.filter(code=> {
        return code.id === selectedid;
     })[0];
-    console.log(selected)
-    $('#name').text(selected.name);
     $('.barcode').empty();
-    $('.barcode').qrcode({
-        text: selected.content
-    });
+    $('#name').text(selected.name);
+    if(selected.type === 'ean13') {
+        // $('.imgbarcode').JsBarcode("welcome", {format: "ean13"});
+    }else{
+        $('.barcode').qrcode({
+            text: selected.content
+        });
+    }
     $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
 
 
 };
 
 const save = () => {
-   addBarcode($('#nameinput').val(),$('#contentinput').val())
+   addBarcode($('#nameinput').val(),$('#contentinput').val(),$('#typeinput').val())
     $("#nameinput").val(null);
     $("#contentinput").val(null);
 };
@@ -74,4 +85,10 @@ const deletebarcode = (id) => {
     getCodes()
 };
 
+const hotgenerate = () => {
+    $('#modalbarcode').empty();
+    $('#modalbarcode').qrcode({
+        text: $('#hotcontentinput').val()
+    });
+};
 
