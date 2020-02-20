@@ -29,7 +29,7 @@ const addBarcode = (name,content) => {
     let codes = localStorage.getItem('codes');
     codes = codes === null?[]:JSON.parse(codes);
     codes.push({
-        id: Math.floor(Math.random() * 26) + Date.now(),
+        id: Math.floor(Date.now()),
         name,
         content
     });
@@ -44,6 +44,7 @@ const selectBarcode = selected => {
     $('.barcode').qrcode({
         text: selected.content
     });
+    $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
 
 
 };
@@ -54,6 +55,16 @@ const save = () => {
     $("#contentinput").val(null);
 };
 
-
+const deletebarcode = (id) => {
+    console.log(id)
+    let codes = localStorage.getItem('codes');
+    codes = codes===null?[]:JSON.parse(codes);
+    console.log(codes)
+    codes = codes.filter(code => {
+        return code.id != id;
+    });
+    localStorage.setItem('codes',JSON.stringify(codes));
+    getCodes()
+};
 
 
