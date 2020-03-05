@@ -65,10 +65,31 @@ const selectBarcode = selectedid => {
             text: selected.content
         });
     }
+    $('.barcode').append(`<br>${selected.content}`)
+    $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand(${selected.content})'>Copy ADB Command</button>`)
     $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
-
-
 };
+
+const escapeAdbText = (text) => {
+    return JSON.stringify(text)
+        .replace(/[{}()<>|;&*\\~"'$]/g, (match) => "\\" + match)
+        .replace(/ /g, "%s")
+        .replace("data", "dt");
+}
+
+const copyToClipboard = (text) => {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(text).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+const copyAdbCommand = (text) => {
+    let escaped = escapeAdbText(text);
+    let command = `adb shell input text '${escaped}'; adb shell input keyevent KEYCODE_ENTER;`;
+    copyToClipboard(command);
+}
 
 const save = () => {
    addBarcode($('#nameinput').val(),$('#contentinput').val(),$('#typeinput').val())
