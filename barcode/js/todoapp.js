@@ -66,12 +66,12 @@ const selectBarcode = selectedid => {
         });
     }
     $('.barcode').append(`<br>${selected.content}`)
-    $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand(${selected.content})'>Copy ADB Command</button>`)
+    $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand("${selected.content}")'>Copy ADB Command</button>`)
     $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
 };
 
 const escapeAdbText = (text) => {
-    return JSON.stringify(text)
+    return text
         .replace(/[{}()<>|;&*\\~"'$]/g, (match) => "\\" + match)
         .replace(/ /g, "%s")
         .replace("data", "dt");
