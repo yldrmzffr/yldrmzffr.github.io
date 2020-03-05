@@ -9,8 +9,6 @@ $(document).ready(() => {
 });
 
 
-
-
 const getLocal = (key) => {
     let value = localStorage.getItem(key);
     return value===null?[]:JSON.parse(value);
@@ -65,8 +63,8 @@ const selectBarcode = selectedid => {
             text: selected.content
         });
     }
-    $('.barcode').append(`<br>${selected.content}`)
-    $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand("${selected.content}")'>Copy ADB Command</button>`)
+    $('.barcode').append(`<br><div id='barcode-content'>${selected.content}</div>`)
+    $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand()'>Copy ADB Command</button>`)
     $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
 };
 
@@ -85,7 +83,8 @@ const copyToClipboard = (text) => {
     $temp.remove();
 }
 
-const copyAdbCommand = (text) => {
+const copyAdbCommand = () => {
+    const text = $('#barcode-content').text();
     let escaped = escapeAdbText(text);
     let command = `adb shell input text '${escaped}'; adb shell input keyevent KEYCODE_ENTER;`;
     copyToClipboard(command);
