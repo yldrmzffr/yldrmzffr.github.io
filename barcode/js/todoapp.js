@@ -71,8 +71,7 @@ const selectBarcode = selectedid => {
 const escapeAdbText = (text) => {
     return text
         .replace(/[{}()<>|;&*\\~"'$]/g, (match) => "\\" + match)
-        .replace(/ /g, "%s")
-        .replace("data", "dt");
+        .replace(/ /g, "%s");
 }
 
 const copyToClipboard = (text) => {
