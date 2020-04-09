@@ -65,6 +65,7 @@ const selectBarcode = selectedid => {
     }
     $('.barcode').append(`<br><div id='barcode-content'>${selected.content}</div>`)
     $('.barcode').append(`<br><button type='button' class='btn btn-info' onclick='copyAdbCommand()'>Copy ADB Command</button>`)
+    $('.barcode').append(`<br><button type='button' class='btn btn-success' onclick='sendAdbCommand()'>Send ADB Command</button>`)
     $('.barcode').append(`<br><button type='button' class='btn btn-outline-danger' onclick='deletebarcode(${selected.id})'>Barkodu Sil</button>`)
 };
 
@@ -72,6 +73,20 @@ const escapeAdbText = (text) => {
     return text
         .replace(/[{}()<>|;&*\\~"'$]/g, (match) => "\\" + match)
         .replace(/ /g, "%s");
+}
+
+const adbCommandGenerate = (text) => {
+    const escaped = escapeAdbText(text);
+    return `adb shell input text '${escaped}'; adb shell input keyevent KEYCODE_ENTER;`;
+}
+
+const sendRequest = (command) => {
+    var xhr = new XMLHttpRequest();
+    var url = "http://localhost:5000/";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    var data = JSON.stringify({ command });
+    xhr.send(data);
 }
 
 const copyToClipboard = (text) => {
@@ -84,9 +99,14 @@ const copyToClipboard = (text) => {
 
 const copyAdbCommand = () => {
     const text = $('#barcode-content').text();
-    let escaped = escapeAdbText(text);
-    let command = `adb shell input text '${escaped}'; adb shell input keyevent KEYCODE_ENTER;`;
+    const command = adbCommandGenerate(text);
     copyToClipboard(command);
+}
+
+const sendAdbCommand = () => {
+    const text = $('#barcode-content').text();
+    const command = adbCommandGenerate(text);
+    sendRequest(command);
 }
 
 const save = () => {
