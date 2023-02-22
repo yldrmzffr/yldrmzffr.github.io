@@ -2,108 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Paket</title>
-  <style>
-body {
-  background-color: #f5f5f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 20px;
-}
-
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-textarea,
-input[type="text"] {
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px #d9d9d9;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  resize: vertical;
-}
-
-input[type="number"] {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 50px;
-}
-
-button {
-  background-color: #1890ff;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  margin-top: 10px;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #147cd5;
-}
-
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css">
 </head>
-<body>
-  <h3>Koliler</h3>
-  <textarea id="boxes" name="boxes" rows="5" cols="20">K1
-K2</textarea>
+<body class="bg-light">
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-3 mb-3">Koli ve Paket Oluşturucu</h3>
 
-  <h3>Paketler</h3>
-  <textarea id="packs" name="packs" rows="8" cols="20">P1
-P2
-P3
-P4
-P5
-P6
-P7
-P8
-P9
-P10</textarea>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label for="boxes" class="label">Koliler:</label>
+            <div class="control">
+              <textarea id="boxes" name="boxes" rows="10" class="textarea"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label for="packs" class="label">Paketler:</label>
+            <div class="control">
+              <textarea id="packs" name="packs" rows="10" class="textarea"></textarea>
+            </div>
+          </div>
+          <p>*Koli ve Paketler alt alta yazılmalıdır.</p>
+        </div>
+      </div>
 
-  <h3>Bir Koli Kaç Paket Alır?</h3>
-  <input id="size" name="size" type="number" value="5"></input>
+      <div class="field">
+        <label for="size" class="label">Bir Koli Kaç Paket Alır?</label>
+        <div class="control">
+          <input id="size" name="size" type="number" value="5" class="input">
+        </div>
+      </div>
 
-  <button type="button" onclick="calculateBoxContents()">Oluştur</button>
+      <button id="create-button" type="button" class="button is-primary is-outlined mb-3">Oluştur</button>
+    </div>
+  </section>
 
+  <!-- JavaScript kodu eklendi -->
   <script>
-    function downloadCSV(dataArray) {
+    const downloadCSV = (dataArray) => {
       const csvContent = "data:text/csv;charset=utf-8," + dataArray.join("\n");
       const encodedUri = encodeURI(csvContent);
-
       const link = document.createElement("a");
       link.setAttribute("href", encodedUri);
       link.setAttribute("download", "file.csv");
       link.click();
-    }
+    };
 
-    function calculateBoxContents() {
+    const calculateBoxContents = () => {
       const boxList = document.getElementById("boxes").value.split("\n");
       const packageList = document.getElementById("packs").value.split("\n");
-      const boxSize = document.getElementById("size").value;
+      const boxSize = Number(document.getElementById("size").value);
 
       const boxContents = boxList.map((box) => {
         const lines = packageList.splice(0, boxSize);
-        return lines.map((line) => box + "," + line).join("\n");
+        return lines.map((line) => `${box},${line}`).join("\n");
       });
 
       downloadCSV(boxContents);
-    }
+    };
+
+    const createButton = document.getElementById("create-button");
+    createButton.addEventListener("click", calculateBoxContents);
   </script>
+
+  <script defer src="https://unpkg.com/bulma@0.9.3/js/bulma.min.js"></script>
 </body>
 </html>
