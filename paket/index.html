@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Paket</title>
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css">
-</head>
-<body class="bg-light">
-  <section class="section">
-    <div class="container">
-      <h3 class="title is-3 mb-3">Koli ve Paket Oluşturucu</h3>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label for="boxes" class="label">Koliler:</label>
-            <div class="control">
-              <textarea id="boxes" name="boxes" rows="10" class="textarea"></textarea>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paket</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css">
+  </head>
+  <body class="bg-light">
+    <section class="section">
+      <div class="container">
+        <h3 class="title is-3 mb-3">Koli ve Paket Oluşturucu</h3>
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+              <label for="boxes" class="label">Koliler:</label>
+              <div class="control">
+                <textarea id="boxes" name="boxes" rows="10" class="textarea"></textarea>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="field">
-            <label for="packs" class="label">Paketler:</label>
-            <div class="control">
-              <textarea id="packs" name="packs" rows="10" class="textarea"></textarea>
+          <div class="column">
+            <div class="field">
+              <label for="packs" class="label">Paketler:</label>
+              <div class="control">
+                <textarea id="packs" name="packs" rows="10" class="textarea"></textarea>
+              </div>
             </div>
+            <p>*Koli ve Paketler alt alta yazılmalıdır.</p>
           </div>
-          <p>*Koli ve Paketler alt alta yazılmalıdır.</p>
         </div>
-      </div>
-
-      <div class="field">
-        <label for="size" class="label">Bir Koli Kaç Paket Alır?</label>
-        <div class="control">
-          <input id="size" name="size" type="number" value="5" class="input">
+        <div class="field">
+          <label for="size" class="label">Bir Koli Kaç Paket Alır?</label>
+          <div class="control">
+            <input id="size" name="size" type="number" value="5" class="input">
+          </div>
         </div>
+        <button id="excel-button" type="button" class="button is-success is-light mb-3">Excel Olustur</button>
+        <button id="csv-button" type="button" class="button is-link is-light mb-3">CSV Oluştur</button>
       </div>
-
-      <button id="create-button" type="button" class="button is-primary is-outlined mb-3">Oluştur</button>
-    </div>
-  </section>
-
-  <!-- JavaScript kodu eklendi -->
-  <script>
-    const downloadCSV = (dataArray) => {
-      const csvContent = "data:text/csv;charset=utf-8," + dataArray.join("\n");
-      const encodedUri = encodeURI(csvContent);
-      const link = document.createElement("a");
-      link.setAttribute("href", encodedUri);
-      link.setAttribute("download", "file.csv");
-      link.click();
-    };
-
-    const calculateBoxContents = () => {
-      const boxList = document.getElementById("boxes").value.split("\n");
-      const packageList = document.getElementById("packs").value.split("\n");
-      const boxSize = Number(document.getElementById("size").value);
-
-      const boxContents = boxList.map((box) => {
-        const lines = packageList.splice(0, boxSize);
-        return lines.map((line) => `${box},${line}`).join("\n");
-      });
-
-      downloadCSV(boxContents);
-    };
-
-    const createButton = document.getElementById("create-button");
-    createButton.addEventListener("click", calculateBoxContents);
-  </script>
-
-  <script defer src="https://unpkg.com/bulma@0.9.3/js/bulma.min.js"></script>
-</body>
+    </section>
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script>
+      const downloadCSV = () => {
+        const boxList = document.getElementById("boxes").value.split("\n");
+        const packageList = document.getElementById("packs").value.split("\n");
+        const boxSize = Number(document.getElementById("size").value);
+        const boxContents = boxList.map((box) => {
+          const lines = packageList.splice(0, boxSize);
+          return lines.map((line) => `${box},${line}`).join("\n");
+        });
+        const csvContent = "data:text/csv;charset=utf-8," + boxContents.join("\n");
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "file.csv");
+        link.click();
+      };
+      const downloadExcel = () => {
+        const boxList = document.getElementById("boxes").value.split("\n");
+        const packageList = document.getElementById("packs").value.split("\n");
+        const boxSize = Number(document.getElementById("size").value);
+        const boxContents = boxList.map((box) => {
+          const lines = packageList.splice(0, boxSize);
+          return lines.map((line) => [box, line]);
+        });
+        const wb = XLSX.utils.book_new();
+        const ws = XLSX.utils.aoa_to_sheet([].concat(...boxContents));
+        XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+        XLSX.writeFile(wb, "file.xlsx");
+      };
+      const excelButton = document.getElementById("excel-button");
+      excelButton.addEventListener("click", downloadExcel);
+      const csvButton = document.getElementById("csv-button");
+      csvButton.addEventListener("click", downloadCSV);
+    </script>
+  </body>
 </html>
