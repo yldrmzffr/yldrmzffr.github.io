@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paket</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body class="bg-light">
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-3 mb-3">Koli ve Paket Oluşturucu</h3>
+
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label for="boxes" class="label">Koliler:</label>
+            <div class="control">
+              <textarea id="boxes" name="boxes" rows="10" class="textarea"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label for="packs" class="label">Paketler:</label>
+            <div class="control">
+              <textarea id="packs" name="packs" rows="10" class="textarea"></textarea>
+            </div>
+          </div>
+          <p>*Koli ve Paketler alt alta yazılmalıdır.</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="size" class="label">Bir Koli Kaç Paket Alır?</label>
+        <div class="control">
+          <input id="size" name="size" type="number" value="5" class="input">
+        </div>
+      </div>
+      <button id="excel-button" type="button" class="button is-success is-light mb-3">Excel Olustur</button>
+      <button id="csv-button" type="button" class="button is-link is-light mb-3">CSV Oluştur</button>
+    </div>
+  </section>
+  <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.19.2/package/dist/xlsx.full.min.js"></script>
+  <script>
+    function downloadCSV() {
+        const boxList = getInputValues("boxes");
+        const packageList = getInputValues("packs");
+        const boxSize = getInputValueAsNumber("size");
+
+        const boxContents = createBoxContents(boxList, packageList, boxSize);
+
+        const csvData = createCSVData(boxContents);
+        downloadFile(csvData, "file.csv", "text/csv");
+    }
+
+    function downloadExcel() {
+        const boxList = getInputValues("boxes");
+        const packageList = getInputValues("packs");
+        const boxSize = getInputValueAsNumber("size");
+
+        const boxContents = createBoxContents(boxList, packageList, boxSize);
+
+        const excelData = createExcelData(boxContents);
+        downloadFile(excelData, "file.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+    }
+
+    function getInputValues(inputId) {
+        return document.getElementById(inputId).value.split("\n");
+    }
+
+    function getInputValueAsNumber(inputId) {
+        return Number(document.getElementById(inputId).value);
+    }
+
+    function createBoxContents(boxList, packageList, boxSize) {
+      return boxList.flatMap(box => {
+        const lines = packageList.splice(0, boxSize);
+        return lines.map(line => [box, line]);
+      });
+    }
+
+    function createCSVData(boxContents) {
+        const csvRows = boxContents.map(row => row.join(","));
+        return "data:text/csv;charset=utf-8," + csvRows.join("\n");
+    }
+
+    function createExcelData(boxContents) {
+        const data = [["Box", "Package"], ...boxContents];
+        const sheet = XLSX.utils.aoa_to_sheet(data);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, sheet, "Sheet1");
+        return XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+    }
+
+    function downloadFile(data, fileName, mimeType) {
+        const encodedData = encodeURI(data);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedData);
+        link.setAttribute("download", fileName);
+        link.setAttribute("type", mimeType);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+
+    const excelButton = document.getElementById("excel-button");
+    excelButton.addEventListener("click", downloadExcel);
+
+    const csvButton = document.getElementById("csv-button");
+    csvButton.addEventListener("click", downloadCSV);
+
+  </script>
+
+</body>
+</html>
